@@ -1,7 +1,7 @@
 name: ubuntu2
 on:
   schedule:
-    - cron: '42 * * * *' # Run every day at midnight
+    - cron: '2 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
