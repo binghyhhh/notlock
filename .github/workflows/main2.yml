@@ -1,0 +1,24 @@
+name: ubuntu2
+on:
+  schedule:
+    - cron: '42 * * * *' # Run every day at midnight
+jobs:
+  download-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download file
+        run: |
+          wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
+          wget -O authk1.json https://ddd-amer6677.koyeb.app/koyeb01/main/auth.json
+          mkdir mainn
+          cp *.* mainn
+          chmod +x /usr/local/bin/OneDriveUploader
+          OneDriveUploader -c authk1.json -s "mainn"
+          wget -r -np -nd -A json https://ddd-amer6677.koyeb.app/koyeb01/main/
+          OneDriveUploader -c authk1.json -s "mainn"
+        
+          
+          
+          
+
+    
