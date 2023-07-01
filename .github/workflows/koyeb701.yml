@@ -1,4 +1,4 @@
-name: livemicr731-ubuntu
+name: ubuntu
 on:
   schedule:
     - cron: '*/50 * * * *' # Run every day at midnight
