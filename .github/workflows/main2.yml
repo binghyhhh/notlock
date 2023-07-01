@@ -11,10 +11,11 @@ jobs:
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
           wget -O authk1.json https://ddd-amer6677.koyeb.app/koyeb01/main/auth.json
           mkdir mainn
-          cp *.* mainn
+          cp *.* 
           chmod +x /usr/local/bin/OneDriveUploader
           OneDriveUploader -c authk1.json -s "mainn"
           wget -r -np -nd -A json https://ddd-amer6677.koyeb.app/koyeb01/main/
+          cp *.* mainn
           OneDriveUploader -c authk1.json -s "mainn"
         
           
